@@ -7,7 +7,7 @@
   });
 
   // Request form -> Apps Script web app (emails info@ and logs to the Rental Worksheet)
-  var ENDPOINT = '';
+  var ENDPOINT = 'https://script.google.com/macros/s/AKfycbxsp3TacVHaU6R-ZRK3O36PhrWz5_WAHQCXrCvG2TKwEN7smJOviltnSNz8dfV683bh/exec';
   var f = document.getElementById('reqForm');
   if (!f) return;
   var started = document.getElementById('started');
