@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Request Dates | RentAtWyndham.com</title>
+<meta name="description" content="Tell us your dates and group size and get a suite and total price by email, usually within the hour. No payment until you review an invoice.">
+<link rel="canonical" href="https://www.rentatwyndham.com/booking-request">
+<meta property="og:type" content="website"><meta property="og:site_name" content="RentAtWyndham.com">
+<meta property="og:title" content="Request Dates | RentAtWyndham.com"><meta property="og:description" content="Tell us your dates and group size and get a suite and total price by email, usually within the hour. No payment until you review an invoice.">
+<meta property="og:url" content="https://www.rentatwyndham.com/booking-request"><meta property="og:image" content="https://www.rentatwyndham.com/assets/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/icon-32.png">
+<link rel="apple-touch-icon" href="/assets/img/icon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Nunito+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap">
+<link rel="stylesheet" href="/assets/css/site.css?v=202609242227">
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav">
+  <div class="wrap navbar">
+    <a class="brand" href="/"><img src="/assets/img/logo.png" srcset="/assets/img/logo-2x.png 2x" width="52" height="51" alt="RentAtWyndham logo"><span><b>RentAtWyndham</b><small>Wisconsin Dells</small></span></a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mainNav">Menu</button>
+    <nav class="links" id="mainNav"><a href="/">Home</a><a href="/glacier-canyon">Glacier Canyon</a><a href="/other-resorts">Other Resorts</a><a href="/faqs">FAQ</a><a href="/rent-your-points">Rent Your Points</a><a href="/contact-us">Contact</a><a href="/booking-request" class="cta">Request Dates</a></nav>
+  </div>
+</header>
+<main id="main">
+<section><div class="wrap">
+  <div class="sec-head"><span class="eyebrow">Request dates</span><h2>Tell us when, we'll tell you what's open and what it costs</h2><p>Takes about a minute. We reply by email with a suite and a total price. If it works, you get an invoice to review before anything is paid.</p></div>
+  <div class="form-wrap">
+    <form class="req" id="reqForm" novalidate>
+      <div class="row2"><label><span class="req">First name</span><input id="fn" name="first_name" required autocomplete="given-name"></label><label><span class="req">Last name</span><input id="ln" name="last_name" required autocomplete="family-name"></label></div>
+      <div class="row2"><label><span class="req">Email</span><input id="em" type="email" name="email" required autocomplete="email"></label><label><span class="req">Phone</span><input id="ph" type="tel" name="phone" required autocomplete="tel"></label></div>
+      <label class="check"><input id="ret" type="checkbox" name="returning_renter" value="Yes"> I've rented from RentAtWyndham before</label>
+      <div class="legend">Where and when</div>
+      <div class="row2">
+        <label><span class="req">Resort</span><select id="resort" name="resort" required><option value="">Choose one</option><option selected>Glacier Canyon Lodge - Wisconsin Dells</option><option>Sundara Cottages - Wisconsin Dells</option><option>Bonnet Creek - Orlando</option><option>Indio / Coachella Valley</option><option>Another Club Wyndham resort (tell us which in the notes)</option></select></label>
+        <label><span class="req">Suite size</span><select id="size" name="suite_size" required><option value="">Choose one</option><option>1 Bedroom (sleeps 4)</option><option>2 Bedroom (sleeps 8)</option><option>3 Bedroom (sleeps 10)</option><option>4 Bedroom (sleeps 14)</option><option>Not sure, help me pick</option></select></label>
+      </div>
+      <div class="row2"><label><span class="req">Check-in</span><input id="ci" type="date" name="check_in" required></label><label><span class="req">Check-out</span><input id="co" type="date" name="check_out" required></label></div>
+      <label class="check"><input id="flex" type="checkbox" name="dates_flexible" value="Yes"> My dates are flexible by a day or two</label>
+      <div class="legend">Who's coming</div>
+      <div class="row2"><label><span class="req">Adults</span><input id="ad" type="number" min="1" max="14" value="2" name="adults" required></label><label>Kids<input id="kd" type="number" min="0" max="12" value="0" name="kids"></label></div>
+      <label>How did you find us<select id="src" name="source"><option>Wisconsin Dells Rental Deals Facebook group</option><option>A Facebook post or ad</option><option>Google search</option><option>A friend or family member</option><option>Rented before</option><option>Other</option></select></label>
+      <label>Anything else we should know<textarea id="notes" rows="3" name="notes" placeholder="Birthday trip, need ground floor, traveling with grandparents..."></textarea></label>
+      <div class="hp" aria-hidden="true"><label>Leave this empty<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+      <input type="hidden" name="_started" id="started">
+      <div class="submit-row"><button class="btn btn-sun" type="submit" id="submitBtn">Send my request</button><span class="hint">No payment now. We reply by email.</span></div>
+      <p class="form-msg" id="formMsg" hidden></p>
+    </form>
+    <div class="aside">
+      <div class="card"><div class="pad"><span class="tag">What happens next</span><p><b>Within the hour</b> (during the day) John or Elizabeth emails you back with what's open on your dates and the total price.</p><p><b>If you like it,</b> we send a QuickBooks invoice with every detail spelled out. Payment on that invoice secures the suite.</p><p><b>Then</b> the reservation goes in your name and Wyndham emails you the guest confirmation.</p></div></div>
+      <div class="card"><div class="pad"><span class="tag">Prefer email or Messenger?</span><p>Email <a href="mailto:info@rentatwyndham.com"><b>info@rentatwyndham.com</b></a> with your dates and phone number and we'll send an invoice right away.</p><p>Or message us on Facebook at <a href="https://m.me/wyndhamrents" target="_blank" rel="noopener"><b>m.me/wyndhamrents</b></a>.</p></div></div>
+    </div>
+  </div>
+  <div class="ok" id="okBox" hidden><b>Got it. Your request is in.</b><p>John or Elizabeth will email you back with what's open on your dates and the total price, usually within the hour during the day. No payment is due until you've reviewed an invoice. If you don't hear from us by tomorrow, check your spam folder or email info@rentatwyndham.com.</p></div>
+</div></section>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div><h3>RentAtWyndham.com</h3><p>Club Wyndham suites at Glacier Canyon Lodge and nearly 200 other resorts, rented direct by owners since 2016. Ellisius, Inc., Costa Mesa, CA.</p>
+        <p class="foot-links"><a href="/booking-request">Request dates</a> · <a href="/faqs">FAQ</a> · <a href="/terms-and-conditions">Terms and Conditions</a> · <a href="/rent-your-points">Owners</a></p></div>
+      <div><h3>Reach us</h3><ul><li><a href="mailto:info@rentatwyndham.com">info@rentatwyndham.com</a></li><li><a href="tel:+15104266367">(510) 426-6367</a></li><li><a href="https://m.me/wyndhamrents" target="_blank" rel="noopener">Messenger: m.me/wyndhamrents</a></li></ul></div>
+      <div><h3>Facebook</h3><ul><li><a href="https://www.facebook.com/wyndhamrents" target="_blank" rel="noopener">RentAtWyndham page</a></li><li><a href="https://www.facebook.com/groups/179510239124605" target="_blank" rel="noopener">Wisconsin Dells Rental Deals group</a></li></ul></div>
+    </div>
+    <p class="fine">RentAtWyndham.com is an independent rental service operated by Club Wyndham owners. It is not affiliated with, sponsored by, or endorsed by Wyndham Destinations, Club Wyndham, or the Wilderness Resort. Wyndham and Club Wyndham are trademarks of their respective owners. &copy; 2026 Ellisius, Inc.</p>
+  </div>
+</footer>
+<script src="/assets/js/site.js?v=202609242227" defer></script>
+</body>
+</html>

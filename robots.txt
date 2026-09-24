@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.rentatwyndham.com/sitemap.xml
