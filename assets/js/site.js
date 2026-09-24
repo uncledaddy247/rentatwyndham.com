@@ -10,6 +10,17 @@
   var ENDPOINT = 'https://script.google.com/macros/s/AKfycbxsp3TacVHaU6R-ZRK3O36PhrWz5_WAHQCXrCvG2TKwEN7smJOviltnSNz8dfV683bh/exec';
   var f = document.getElementById('reqForm');
   if (!f) return;
+  // Prefill resort from /booking-request?resort=Name (links from the resort directory)
+  try {
+    var qp = new URLSearchParams(location.search).get('resort');
+    var sel = document.getElementById('resort');
+    if (qp && sel) {
+      var hit = Array.prototype.find.call(sel.options, function (o) { return o.text.indexOf(qp) === 0; });
+      if (hit) { sel.value = hit.value || hit.text; }
+      else { var o = document.createElement('option'); o.text = qp; o.value = qp; sel.insertBefore(o, sel.options[1]); sel.value = qp; }
+      var h = document.querySelector('.sec-head h2'); if (h) h.textContent = 'Request dates at ' + qp;
+    }
+  } catch (err) {}
   var started = document.getElementById('started');
   if (started) started.value = String(Date.now());
   var ci = document.getElementById('ci'), co = document.getElementById('co');
