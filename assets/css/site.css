@@ -165,3 +165,18 @@ a.card:hover{border-color:var(--pine);transform:translateY(-2px)}
 footer a{color:#fff}
 .hero img.bg{object-position:center 45%}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.card,a.card:hover{transition:none;transform:none}}
+/* resort directory */
+.jump{display:flex;flex-wrap:wrap;gap:.5rem;margin:.2rem 0 1rem}
+.jump a{font-weight:700;font-size:.9rem;text-decoration:none;color:var(--pine);background:var(--ice);padding:.45rem .8rem;border-radius:999px}
+.jump a:hover{background:var(--pine);color:#fff}
+.cnt{font-family:var(--body);font-size:.85rem;font-weight:700;color:var(--muted);margin-left:.4rem}
+h3.grp{margin:1.6rem 0 .7rem;padding-bottom:.3rem;border-bottom:2px solid var(--line)}
+.rgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:.8rem}
+.rcard{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:.9rem 1rem;display:flex;flex-direction:column;gap:.7rem;justify-content:space-between}
+.rcard h4{font-family:var(--display);font-weight:700;font-size:1.05rem;line-height:1.2;margin:0 0 .2rem}
+.rcard h4 a{color:var(--ink);text-decoration:none}
+.rcard h4 a:hover{color:var(--pine);text-decoration:underline}
+.rcard p{font-size:.9rem}
+.racts{display:flex;gap:.5rem;flex-wrap:wrap}
+.btn.sm{padding:.5rem .9rem;font-size:.85rem}
+.sec-head h2 .cnt{font-size:1rem}
