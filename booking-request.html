@@ -33,6 +33,8 @@
     <form class="req" id="reqForm" novalidate>
       <div class="row2"><label><span class="req">First name</span><input id="fn" name="first_name" required autocomplete="given-name"></label><label><span class="req">Last name</span><input id="ln" name="last_name" required autocomplete="family-name"></label></div>
       <div class="row2"><label><span class="req">Email</span><input id="em" type="email" name="email" required autocomplete="email"></label><label><span class="req">Phone</span><input id="ph" type="tel" name="phone" required autocomplete="tel"></label></div>
+      <div class="row2"><label>Street address<input id="addr1" type="text" name="address_street" autocomplete="street-address" placeholder="123 Main St"></label><label>City, State, ZIP<input id="addr2" type="text" name="address_city_state_zip" autocomplete="address-level2" placeholder="Madison, WI 53703"></label></div>
+      <p class="muted" style="margin:-4px 0 10px;font-size:.9em">Mailing address is optional now, but we need it before we can send your invoice, so adding it here saves a step.</p>
       <label class="check"><input id="ret" type="checkbox" name="returning_renter" value="Yes"> I've rented from RentAtWyndham before</label>
       <div class="legend">Where and when</div>
       <div class="row2">
@@ -51,18 +53,18 @@
       <p class="form-msg" id="formMsg" hidden></p>
     </form>
     <div class="aside">
-      <div class="card"><div class="pad"><span class="tag">What happens next</span><p><b>Within the hour</b> (during the day) John or Elizabeth emails you back with what's open on your dates and the total price.</p><p><b>If you like it,</b> we send a QuickBooks invoice with every detail spelled out. Payment on that invoice secures the suite.</p><p><b>Then</b> the reservation goes in your name and Wyndham emails you the guest confirmation.</p></div></div>
-      <div class="card"><div class="pad"><span class="tag">Prefer email or Messenger?</span><p>Email <a href="mailto:info@rentatwyndham.com"><b>info@rentatwyndham.com</b></a> with your dates and phone number and we'll send an invoice right away.</p><p>Or message us on Facebook at <a href="https://m.me/wyndhamrents" target="_blank" rel="noopener"><b>m.me/wyndhamrents</b></a>.</p></div></div>
+      <div class="card"><div class="pad"><span class="tag">What happens next</span><p><b>Usually the same day,</b> John or Elizabeth emails you back with what's open on your dates and the total price.</p><p><b>If you like it,</b> we send a QuickBooks invoice with every detail spelled out. Payment on that invoice secures the suite.</p><p><b>Then</b> the reservation goes in your name and Wyndham emails you the guest confirmation.</p></div></div>
+      <div class="card"><div class="pad"><span class="tag">Prefer email?</span><p>Email <a href="mailto:info@rentatwyndham.com"><b>info@rentatwyndham.com</b></a> with your dates, guest count, phone number, and mailing address and we'll send an invoice right away.</p><p><b>Please don't use Facebook DMs or post comments for booking requests.</b> They get buried and we can't track them. This form and email are the two channels we log and answer.</p></div></div>
     </div>
   </div>
-  <div class="ok" id="okBox" hidden><b>Got it. Your request is in.</b><p>John or Elizabeth will email you back with what's open on your dates and the total price, usually within the hour during the day. No payment is due until you've reviewed an invoice. If you don't hear from us by tomorrow, check your spam folder or email info@rentatwyndham.com.</p></div>
+  <div class="ok" id="okBox" hidden><b>Got it. Your request is in.</b><p>John or Elizabeth will email you back with what's open on your dates and the total price, usually the same day. No payment is due until you've reviewed an invoice. If you don't hear from us by tomorrow, check your spam folder or email info@rentatwyndham.com.</p></div>
 </div></section>
 </main>
 <footer>
   <div class="wrap">
     <div class="cols">
       <div><h3>RentAtWyndham.com</h3><p>Club Wyndham suites at Glacier Canyon Lodge and 240+ other Wyndham resort locations, rented direct by owners since 2016. Costa Mesa, CA.</p>
-        <p class="foot-links"><a href="/booking-request">Request dates</a> · <a href="/faqs">FAQ</a> · <a href="/terms-and-conditions">Terms and Conditions</a> · <a href="/rent-your-points">Owners</a></p></div>
+        <p class="foot-links"><a href="/booking-request">Request dates</a> · <a href="/faqs">FAQ</a> · <a href="/terms-and-conditions">Terms and Conditions</a> · <a href="/privacy">Privacy</a> · <a href="/rent-your-points">Owners</a></p></div>
       <div><h3>Reach us</h3><ul><li><a href="mailto:info@rentatwyndham.com">info@rentatwyndham.com</a></li><li><a href="tel:+15104266367">(510) 426-6367</a></li><li><a href="https://m.me/wyndhamrents" target="_blank" rel="noopener">Messenger: m.me/wyndhamrents</a></li></ul></div>
       <div><h3>Facebook</h3><ul><li><a href="https://www.facebook.com/wyndhamrents" target="_blank" rel="noopener">RentAtWyndham page</a></li><li><a href="https://www.facebook.com/groups/179510239124605" target="_blank" rel="noopener">Wisconsin Dells Rental Deals group</a></li></ul></div>
     </div>

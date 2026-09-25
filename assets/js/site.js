@@ -43,6 +43,8 @@
       showErr('The request form is being connected. Please email info@rentatwyndham.com with your dates and phone number and we will send an invoice right away.');
       return;
     }
+    var a1 = f.address_street ? f.address_street.value.trim() : '', a2 = f.address_city_state_zip ? f.address_city_state_zip.value.trim() : '';
+    if ((a1 || a2) && f.notes) { f.notes.value = 'Mailing address: ' + [a1, a2].filter(Boolean).join(', ') + (f.notes.value ? '\n' + f.notes.value : ''); }
     var data = new URLSearchParams(new FormData(f));
     data.set('page', location.href);
     data.set('submitted_at', new Date().toISOString());
