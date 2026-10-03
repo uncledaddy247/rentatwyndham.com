@@ -180,3 +180,5 @@ h3.grp{margin:1.6rem 0 .7rem;padding-bottom:.3rem;border-bottom:2px solid var(--
 .racts{display:flex;gap:.5rem;flex-wrap:wrap}
 .btn.sm{padding:.5rem .9rem;font-size:.85rem}
 .sec-head h2 .cnt{font-size:1rem}
+/* iPhone Safari: empty date inputs collapse to a thin sliver; keep them full size and left-aligned */
+input[type="date"]{min-height:2.9rem;display:block;text-align:left}
